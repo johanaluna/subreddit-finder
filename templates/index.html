@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-4 col-5-large col-12-medium">
+    <span class="image fit"><img src="../static/images/1.png" alt="" /></span>
+  </div>
+  <div class="col-8 col-7-large col-12-medium">
+    <header>
+      <h1><strong>Subreddit Recommender</strong></h1>
+    </header>
+    <p> <strong>Write your post </strong>and find what the most relevant subreddit to <strong> post your content!!</strong><br>
+    </p>
+    <form action="/subreddit">
+      <div class="form-group">
+        <input class="form-control mr-sm-2" name="title" type="search" placeholder=" Write a title" aria-label="Search" style="width:500px">
+      </div><br>
+      <div class="form-group">
+        <textarea class="form-control" name="content" placeholder="Write the text of the subreddit" id="text1" rows="3"></textarea>
+      </div><br>
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <br><br><br>
+    <p> We have also a full website with tons of puzzles to play online <a href="http://omega2020.netlify.com">(Full Website)</a></p> 
+</div>
+{% endblock %}    

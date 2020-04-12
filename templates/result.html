@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+  <div>
+    <h3>Subreddits</h3>
+    <br>
+      {% for i in res%}
+        <div class="listings">
+          <div class="listinner">
+            <h3><a href="{{'https://www.reddit.com' + i['url']}}">{{i['name']}}</a></h3>
+            <h5><b>Description: </b>{{i['description']}}</h5>
+            <h6><b>Subscribers: </b>{{i['subscribers']}}</h6>
+            <h6><b>Active Accounts: </b>{{i['active_accounts']}}</h6>
+          </div>
+        </div>
+        <hr>
+      {%endfor%}
+      <br>
+  </div>
+{% endblock %}
